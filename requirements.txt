@@ -1,0 +1,6 @@
+RPi.GPIO
+spidev
+adafruit-blinka
+adafruit-circuitpython-rgb-display
+Flask
+gunicorn

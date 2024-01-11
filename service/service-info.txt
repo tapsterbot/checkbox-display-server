@@ -1,0 +1,20 @@
+$ sudo systemctl start checkbox-display-server
+$ sudo systemctl stop checkbox-display-server
+$ sudo systemctl restart checkbox-display-server
+$ sudo systemctl status checkbox-display-server
+
+# To install:
+$ sudo cp checkbox-display-server.service /etc/systemd/system/checkbox-display-server.service
+$ sudo chmod 644 /etc/systemd/system/checkbox-display-server.service
+
+# Update systemd
+$ sudo systemctl daemon-reload
+
+# Start it up!
+$ sudo systemctl start checkbox-display-server
+
+# Tail the logs
+$ journalctl -u checkbox-display-server -f
+
+# To make it run on boot
+$ sudo systemctl enable checkbox-display-server

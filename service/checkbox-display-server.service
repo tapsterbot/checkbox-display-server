@@ -1,0 +1,12 @@
+[Unit]
+Description=Checkbox Display Server
+After=network.target
+
+[Service]
+User=tapster
+WorkingDirectory=/home/tapster/Projects/checkbox/checkbox-display-server
+ExecStart=/home/tapster/Projects/checkbox/checkbox-display-server/env/bin/python display_server.py
+RestartSec=10s
+
+[Install]
+WantedBy=multi-user.target
